@@ -34,7 +34,7 @@ The user with IP: 24.48.0.1 is located in Montreal, Canada
 ## License
 Copyright © 2022 Ivan Gechev.
 
-This package has MIT license. Refer to the [LICENSE](hhttps://github.com/Banovvv/IPGeo/blob/81d87f5fe1c35a80aaeae7d923195a0e49514dd1/LICENSE) for detailed information.
+This package has MIT license. Refer to the [LICENSE](https://github.com/Banovvv/IPGeo/blob/81d87f5fe1c35a80aaeae7d923195a0e49514dd1/LICENSE) for detailed information.
 
 ## Questions, comments or additions
 If you have a feature request or bug report, [open a new Issue](https://github.com/Banovvv/IPGeo/issues/new) or [send a Pull request](https://github.com/Banovvv/IPGeo/pulls).
