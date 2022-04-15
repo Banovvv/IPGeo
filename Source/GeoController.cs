@@ -21,7 +21,7 @@ namespace IPGeo
                 BaseAddress = baseAddress
             };
 
-            HttpResponseMessage queryResponse= await client.GetAsync(baseAddress);
+            var queryResponse= await client.GetAsync(baseAddress);
 
             var jsonContent = await queryResponse.Content.ReadAsStringAsync();
 

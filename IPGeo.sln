@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPGeo", "IPGeo.csproj", "{178866A4-D497-4E95-A338-8C3560B68CED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IPGeo", "IPGeo.csproj", "{178866A4-D497-4E95-A338-8C3560B68CED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPGeo.Test", "..\IPGeo.Test\IPGeo.Test.csproj", "{5C7D3E3F-C7FF-4D7D-A92A-0F36ED918B8B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{178866A4-D497-4E95-A338-8C3560B68CED} = {178866A4-D497-4E95-A338-8C3560B68CED}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{178866A4-D497-4E95-A338-8C3560B68CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{178866A4-D497-4E95-A338-8C3560B68CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{178866A4-D497-4E95-A338-8C3560B68CED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C7D3E3F-C7FF-4D7D-A92A-0F36ED918B8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C7D3E3F-C7FF-4D7D-A92A-0F36ED918B8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C7D3E3F-C7FF-4D7D-A92A-0F36ED918B8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C7D3E3F-C7FF-4D7D-A92A-0F36ED918B8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
