@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +9,42 @@ namespace IPGeo
 {
 	internal class IPResponse
 	{
-		public IPResponse()
+		public IPResponse(string jsonResponse)
 		{
+			JObject data = JObject.Parse(jsonResponse);
+			Status = data.SelectToken("status").ToString();
 
+			if(Status == "success")
+            {
+				Continent = data.SelectToken("continent").ToString();
+				ContinentCode = data.SelectToken("continentCode").ToString();
+				Country = data.SelectToken("country").ToString();
+				CountryCode = data.SelectToken("countryCode").ToString();
+				Region = data.SelectToken("region").ToString();
+				RegionName = data.SelectToken("regionName").ToString();
+				City = data.SelectToken("city").ToString();
+				District = data.SelectToken("district").ToString();
+				Zip = data.SelectToken("zip").ToString();
+				Latitude = double.Parse(data.SelectToken("lat").ToString());
+				Longitude = double.Parse(data.SelectToken("lon").ToString());
+				Timezone = data.SelectToken("timezone").ToString();
+				TimezoneOffset = data.SelectToken("offset").ToString();
+				Currency = data.SelectToken("currency").ToString();
+				ISP = data.SelectToken("isp").ToString();
+				OrganizationName = data.SelectToken("org").ToString();
+				As = data.SelectToken("as").ToString();
+				AsName = data.SelectToken("asname").ToString();
+				Reverse = data.SelectToken("reverse").ToString();
+				Mobile = (bool)data.SelectToken("mobile");
+				Proxy = (bool)data.SelectToken("proxy");
+				Hosting = (bool)data.SelectToken("hosting");
+				IP = data.SelectToken("query").ToString();
+			}
+            else
+            {
+				Message = data.SelectToken("message").ToString();
+				IP = data.SelectToken("query").ToString();
+			}
 		}
 
 		public string Status { get; }
