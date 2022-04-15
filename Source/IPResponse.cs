@@ -2,7 +2,7 @@
 
 namespace IPGeo
 {
-    internal class IPResponse
+    public class IPResponse
     {
         public IPResponse(string jsonResponse)
         {
