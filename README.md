@@ -19,7 +19,14 @@ using IPGeo;
 var geoController = new GeoController();
 var ipData = await geoController.GetGeoData("24.48.0.1");
 
-Console.WriteLine($"The user with IP: {ipData.IP} is located in {ipData.City}, {ipData.Country}");
+if (ipData.Status == "success")
+{
+    Console.WriteLine($"The user with IP: {ipData.IP} is located in {ipData.City}, {ipData.Country}"); 
+}
+else
+{
+    Console.WriteLine($"The provided IP ({ipData.IP}) is invalid");
+}
 
 ```
 This will produce the following result:
