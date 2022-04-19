@@ -1,8 +1,6 @@
-﻿using System.Web.Http;
-
-namespace IPGeo
+﻿namespace IPGeo
 {
-    public class GeoController : ApiController
+    public class GeoController
     {
         private readonly string _baseUrl = @"http://ip-api.com/json/{query}?fields=66846719";
 
