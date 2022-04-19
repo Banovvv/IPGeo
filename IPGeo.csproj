@@ -4,6 +4,20 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Company>Ivan Gechev</Company>
+    <Authors>IPGeo</Authors>
+    <PackageId>IPGeo</PackageId>
+    <Version>1.0.0</Version>
+    <Product>IPGeo</Product>
+    <PackageIcon>IPGeo.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/Banovvv/IPGeo</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Banovvv/IPGeo</RepositoryUrl>
+    <Copyright>Copyright © 2022 Ivan Gechev</Copyright>
+    <Description>This library that provides simple means of obtaining geolocation and other IP-related data from the IP Geolocation API.</Description>
+    <PackageTags>ip; geo; location; geolocation</PackageTags>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <PackageLicenseFile>C:\Users\User\source\repos\IPGeo\LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,6 +26,17 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
     <PackageReference Include="Microsoft.Web.Administration" Version="11.1.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="IPGeo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
