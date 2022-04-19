@@ -4,7 +4,7 @@
 This is a <strong>C# (.NET 6)</strong> library that provides simple means of obtaining geolocation and other IP-related data from the [IP Geolocation API](https://ip-api.com/).
 
 ## Status
-*NuGet package to come*
+[![NuGet Badge](https://buildstats.info/nuget/IPGeo)](https://www.nuget.org/packages/IPGeo)
 
 ## Methods
 There is one <strong>asynchronous</strong> method which return an Object containing all the relevant information for a given IP addres:

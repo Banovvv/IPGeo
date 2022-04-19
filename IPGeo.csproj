@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Company>Ivan Gechev</Company>
-    <Authors>IPGeo</Authors>
+    <Authors>Ivan Gechev</Authors>
     <PackageId>IPGeo</PackageId>
     <Version>1.0.0</Version>
     <Product>IPGeo</Product>
