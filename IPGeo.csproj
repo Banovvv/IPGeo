@@ -17,7 +17,7 @@
     <Description>This library that provides simple means of obtaining geolocation and other IP-related data from the IP Geolocation API.</Description>
     <PackageTags>ip; geo; location; geolocation</PackageTags>
     <PackageReleaseNotes>Initial release</PackageReleaseNotes>
-    <PackageLicenseFile>C:\Users\User\source\repos\IPGeo\LICENSE</PackageLicenseFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
